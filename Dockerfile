@@ -8,7 +8,7 @@ RUN apk update && apk upgrade \
     && apk add nginx \
     && apk add --no-cache --upgrade bash \
     && apk add php5 php5-fpm php5-opcache \
-    && apk add php5-gd php5-mysqli php5-mysql php5-zlib php5-curl php-mbstring php5-intl php5-xml php5-phar icu-dev php5-pdo php5-gettext php-session php5-pdo_mysql php5-sqlite3 php5-pdo_sqlite php5-dom php-simplexml \
+    && apk add php5-iconv php5-gd php5-mysqli php5-json php5-mysql php5-zlib php5-curl php-mbstring php5-intl php5-xml php5-phar icu-dev php5-pdo php5-gettext php-session php5-pdo_mysql php5-sqlite3 php5-pdo_sqlite php5-dom php-simplexml \
     && mkdir -p /run/nginx
 
 RUN mkdir -p /var/run/nginx /var/log/nginx /var/cache/nginx && \
